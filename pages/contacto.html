@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../images/tejido-de-punto.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header id="header">
+        <a class="Logo" href="../index.html"><img src="../images/pngwing.com.png"></a>
+        <nav class="Navegadores">
+            <ul>
+                <li><a href="../pages/nosotros.html">CONOCENOS</a>
+                    <ul>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    </ul>   
+                </li>                         
+                <li><a href="../pages/para-ninos.html">Para niños</a></li>
+                <li><a href="../pages/para-el-hogar.html">Para el Hogar</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Principal">
+        <div class="Central">
+        <h1>CONTACTANOS</h1>
+        <p class="Textos">Escribinos, llamanos, lo que vos prefieras. Estamos para asesorarte, atender tus inquietudes. Somos fabricantes y podemos confeccionar a gusto tu pedido.</p>
+        <form action="enviar.php" method="get">
+            <fieldset>
+                <legend>Comentarios</legend>
+                <label for="multi"></label>    
+                <textarea name="multi" id="multi" cols="30" rows="5"></textarea>                
+                <label for="">¿Qué necesitás?</label>
+                <input type="checkbox" name="acepta" id="Nino">Ropa
+                <input type="checkbox" name="acepta" id="Hogar">Hogar
+            </fieldset>
+            <fieldset>    
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" required>                
+                <LABEl for="">Desde dónde nos contactas</LABEl>
+                <select name="Países" id="Países">
+                <option value="ARG">Argentina</option>
+                <option value="BRA">Brasil</option>
+                <option value="COL">Colombia</option>                
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26790.731895952853!2d-68.86720586586507!3d-32.92878600820306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095dea6a01e7%3A0x90fb57ac5758c337!2sGodoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1666839178775!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <Footer id="Pie">
+        <p>Trabajamos con los siguientes medios de pago:</p>
+        <div>
+            <img src="../images/visa.png" alt="Visa">
+            <img src="../images/masterCard.png" alt="Master">
+            <img src="../images/amex.png" alt="Amex">
+            <img src="../images/mP.png" alt="MP">
+        </div>
+        <p>2022 - Suavecitos by Mariela Tiviroli - &copy; Todos los derechos reservados</p>
+    </Footer>    
+</body>
+</html>
