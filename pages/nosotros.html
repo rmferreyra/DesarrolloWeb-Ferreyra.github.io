@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="../images/tejido-de-punto.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header id="header">
-        <a class="Logo" href="../index.html"><img src="../images/pngwing.com.png"></a>
+    <header class="header">
+        <audio src="./images/la-Vie-En-Rose.mp3" autoplay="autoplay" loop="loop"></audio>
+        <a class="Logo" href="../index.html"><img src="../images/tejido-de-punto.png"></a>
         <nav class="Navegadores">
             <ul>
                 <li><a href="../pages/nosotros.html">CONOCENOS</a>
                     <ul>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/nosotros.html">Conoceme</a></li>
                     </ul>   
                 </li>                         
-                <li><a href="../pages/para-ninos.html">Para niños</a></li>
-                <li><a href="../pages/para-el-hogar.html">Para el Hogar</a></li>
+                <li><a href="../pages/para-ninos.html">Para peques</a></li>
+                <li><a href="../pages/para-el-hogar.html">Para casita</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main id="Principal">
-        <div class="Central">
-        <h1>NUESTRA HISTORIA</h1>
-        <p class="Textos">De profesión Sommelier, viajera por el mundo, apasadionada por la creación, Mariela Tiviroli desde siempre tejió, gracias a la enseñanza de su bisabuela. En un principio sus productos iban destinado a familiares y amigos. Pero llegó un momento donde reconoció que todos debían disfrutar de sus creaciones. Por eso se proyectó y lanzó SUAVECITOS, para los más peques y para los sectores destacados del hogar.</p>
-        <h2>Suscribite a nuestro newsletter</h2>
-        <form action="enviar.php" method="get">
+    <main>
+        <div class="Central" data-aos="zoom-out-up">
+            <p>Apasadionada por la creación, amante de lo simple y delicado... Así podría empezar describiéndome.
+            De profesión Sommelier, cuando tuve la suerte de viajar por el mundo conocí diferentes culturas que me inspiraron a hacer algo diferente. Desde pequeña empecé a tejer gracias a la enseñanza de mi bisabuela. Horas y horas de trabajo destinado a familiares y amigos. Pero cuando llegaron mis 2 hijos al mundo me di cuenta de que era el momento de ofrecer mis creaciones para todo aquel que las quisiera. Por eso proyectamos y lanzamos SUA<strong>vecito</strong>S... destinado a los más pequeños de la casa... pero también ofrezco un mimito a los sectores destacados del hogar. Gracias por interesarte, por querer conocer mis creaciones. Estoy para resolver tus inquietudes, para fabricar lo que vos quieras o necesités, completamente a gusto, para tu exclusividad.</p>
+            <img src="../images/mari.jpg" alt="Mari" class="img-thumbnail">
+        </div>
+
+        <div class="Central" data-aos="zoom-out-up">
+            <img src="../images/manos.jpg" alt="Manos" class="img-thumbnail">
+            <p>¿Sabías qué saludable es aprender a tejer desde chicos? Uno de los beneficios más importantes en los niños es la notable mejora de las habilidades motoras, particularmente la psicomotricidad fina y por otro lado la coordinación óculo-mano. Ayuda a estar concentrado en el presente y tener su atención enfocada en no perder los puntos y entrelazar el hilo correctamente, es una actividad que con el tiempo se convierte en un reto personal. Enseña a los más pequeños a perseguir una meta, que es un aspecto fundamental en la vida, además demuestra que el camino para conseguir un objetivo puede ser una tarea entretenida y divertida. Es bueno para las matemáticas, mejora la creatividad... <strong>¡ENTRE MUCHAS OTRAS RAZONES MÁS!</strong></p>
+        </div>
+
+        <div class="Subtitulo">
+            <h2>EL TEJIDO ES ALGO MUY IMPORTANTE ES NUESTRA VIDA</h2>
+            <h3>Mirá el siguiente video</h3>
+        </div>
+            <div class="Video"  data-aos="zoom-out-up">
+            <iframe width="663" height="373" src="https://www.youtube.com/embed/uJaCqGa_O7k" title="Beneficios del tejido en nuestra salud y bienestar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="Suscribite">
+            <h2>Suscribite a nuestro newsletter</h2>
+            <form action="enviar.php" method="get">
             <fieldset>
                 <legend>Datos Personales</legend>
                 <label for="Nombre">Nombre</label>
@@ -39,17 +58,24 @@
                 <input type="submit" value="Suscribirse">
             </fieldset>
         </div>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/sTKllcnrlz0" title="Cojines tejidos a crochet para la decoracion de tu hogar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <div class="Whatsapp" data-aos="zoom-out-up">
+            <a href="https://api.whatsapp.com/send?phone=542615936269"><img src="../images/whatsapp.png" alt="Whatsapp"></a>
+        </div>
     </main>
-    <Footer id="Pie">
-        <p>Trabajamos con los siguientes medios de pago:</p>
+    <Footer class="Pie">
+            <p>Podés pagar tus productos SUA<strong>vecito</strong>S con estos medios:</p>
         <div>
             <img src="../images/visa.png" alt="Visa">
             <img src="../images/masterCard.png" alt="Master">
             <img src="../images/amex.png" alt="Amex">
             <img src="../images/mP.png" alt="MP">
         </div>
-            <p>2022 - Suavecitos by Mariela Tiviroli - &copy; Todos los derechos reservados</p>
+            <p>2022 - Suavecitos by Mariela - &copy; Todos los derechos reservados</p>
     </Footer>         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

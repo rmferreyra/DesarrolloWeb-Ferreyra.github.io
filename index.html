@@ -6,46 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suavecitos</title>
     <link rel="shortcut icon" href="./images/tejido-de-punto.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header id="header">
-        <a class="Logo" href="./index.html"><img src="./images/pngwing.com.png"></a>
+    <header class="header">
+        <audio src="./images/la-Vie-En-Rose.mp3" autoplay="autoplay" loop="loop"></audio>
+        <a class="Logo" href="./index.html"><img src="./images/tejido-de-punto.png"></a>
         <nav class="Navegadores">
             <ul>
                 <li><a href="./pages/nosotros.html">CONOCENOS</a>
                     <ul>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="./pages/nosotros.html">Conoceme</a></li>
                     </ul>   
                 </li>                         
-                <li><a href="./pages/para-ninos.html">Para niños</a></li>
-                <li><a href="./pages/para-el-hogar.html">Para el Hogar</a></li>
+                <li><a href="./pages/para-ninos.html">Para peques</a></li>
+                <li><a href="./pages/para-el-hogar.html">Para casita</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main id="Principal">
-        <div class="Intro">
-        <H1>PENSADO PARA LOS MÁS CHIQUITOS, PENSADO PARA EL HOGAR</H1>
-        <img src="./images/tejidonino.jpg" alt="Nino">
+    <main>
+        <div class="Titulo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <h1>SUA<strong>vecito</strong>S</h1>  
+          <h5>Pensado para los más chiquitos... pensado para el hogar.</h5>
         </div>
-        <div class="Central">
-        <p class="Textos">Porque los peques necesitan estar a la moda, pero a la vez abrigados y calentitos. Porque el hogar necesita lucir bien, pero a la vez ser funcional a nuestras necesidades. Por eso, desarrollamos esta línea de ropa infantil y de productos para el diario hogareño; delicadez, sutileza y buen gusto nos definen. <strong>¡CONOCENOS!</strong></p>
-        <img src="./images/centro-mandalas-azul-2f.jpg" alt="Mandala">
+        <div id="carouselExampleControls" class="carouselSlide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/1-baby.jpg" class="d-block w-100" alt="1baby">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/2-home.jpg" class="d-block w-100" alt="2home">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/3-baby.jpg" class="d-block w-100" alt="3baby">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/4-home.jpg" class="d-block w-100" alt="4home">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/5-baby.jpg" class="d-block w-100" alt="5baby">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/6-home.jpg" class="d-block w-100" alt="6home">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="Whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=542615936269"><img src="./images/whatsapp.png" alt="Whatsapp"></a>
+        <div class="Principal" data-aos="zoom-out-up">
+          <img src="./images/intro.jpg" alt="Intro">
+          <p>Buen gusto, calidad, diseños exclusivos... 3 pautas que nos definen y diferencian. Porque nuestros peques merecen
+          lo mejor, estar abrigaditos y, por qué no? a la moda. Pero no nos olvidemos de nuestro hogar... esos pequeños detalles
+          que lo hacen único y especial; para nuestro rincón favorito, para el dormitorio, para la mesa... para donde vos quieras.
+          Te invitamos a recorrer un camino único y especial donde los tejidos de lana serán los protagonistas de tu vida. Un camino
+          pensado a TU GUSTO. <strong>¡CONOCENOS!</strong></p>
+        </div>
+        <div class="Whatsapp" data-aos="zoom-out-up">
+          <a href="https://api.whatsapp.com/send?phone=542615936269"><img src="./images/whatsapp.png" alt="Whatsapp"></a>
         </div>
     </main>    
-    <Footer id="Pie">
-        <p>Trabajamos con los siguientes medios de pago:</p>
+    <Footer class="Pie">
+          <p>Podés pagar tus productos SUA<strong>vecito</strong>S con estos medios:</p>
         <div>
             <img src="./images/visa.png" alt="Visa">
             <img src="./images/masterCard.png" alt="Master">
             <img src="./images/amex.png" alt="Amex">
             <img src="./images/mP.png" alt="MP">
         </div>
-        <p>2022 - Suavecitos by Mariela Tiviroli - &copy; Todos los derechos reservados</p>
+          <p>2022 - Suavecitos by Mariela - &copy; Todos los derechos reservados</p>
     </Footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
