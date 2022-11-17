@@ -201,6 +201,11 @@ body {
 
 .Pie img {
     width: 4%;
+    transition: width 2s;
+}
+
+.Pie img:hover {
+    width: 10%;
 }
 
 .Suscribite {
