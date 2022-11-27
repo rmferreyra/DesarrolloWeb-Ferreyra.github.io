@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: cursive;
+    font-family: lato, sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, rgb(169, 199, 218), palevioletred);
 }
 
 .header .Logo img {
@@ -14,9 +16,10 @@ body {
 }
 
 .Navegadores {
-    margin: .25%;
-    width: 100%;
-    background-color: palevioletred;
+    margin: 1%;
+    padding: 1%;
+    width: auto;
+    background-image: linear-gradient(to top, rgb(169, 199, 218), palevioletred);
     border-radius: 40px;
     text-align: center;
 }
@@ -24,7 +27,7 @@ body {
 .Navegadores li {
     list-style: none;
     display: inline-flex;
-    padding: 1%;
+    padding: 2%;
 }
 
 .Navegadores li a {
@@ -55,16 +58,9 @@ body {
     position: relative;
 }
 
-body {
-    background-image: linear-gradient(to bottom, rgb(169, 199, 218), palevioletred);
-}
-
-.carouselSlide {
-    width: 70%;
-    margin-top: 1%;
-    margin-left: 15%;
-    display: inline-block;
-    justify-items: end;
+#carouselSlidesOnly {
+    margin: 1%;
+    padding: 1%;
 }
 
 .Titulo {
@@ -84,10 +80,10 @@ body {
     padding: 1%;
     border: solid rgb(169, 199, 218);
     border-radius: 40px;
-    display: flex;
-    font-size: larger;
-    text-align: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    font-size: x-large;
 }
 
 .Principal img {
@@ -99,15 +95,15 @@ body {
     padding: 1%;
     border: solid rgb(169, 199, 218);
     border-radius: 40px;
-    display: flex;
-    font-size: larger;
-    text-align: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    font-size: x-large  ;
 }
 
 .Video {
-    text-align: center;
-        
+    display: grid;
+    place-content: center;        
 }
 
 .Ubicacion {
@@ -135,7 +131,8 @@ body {
 
 .Cafecito {
     margin: 2%;
-    text-align: center;
+    display: grid;
+    place-content: center;    
 }
 
 .Peques1, .Peques2, .Peques3 {
@@ -186,18 +183,21 @@ body {
 
 .Whatsapp {
     margin: 2%;
-    display: block;
-    text-align: end;
+    display: grid;
+    place-content: end;
 }
 
 .Pie {
     margin: 1%;
-    padding: .1%;
+    padding: 1%;
+    display: block;
     width: auto;
-    background-color: rgb(169, 199, 218);
+    background-image: linear-gradient(to top, rgb(169, 199, 218), palevioletred);
+    text-align: center  ;
     border-radius: 40px;
-    text-align: center;
+
 }
+
 
 .Pie img {
     width: 4%;
@@ -213,26 +213,25 @@ body {
 }
 
 @media (max-width: 720px) {
-    .Logo, .Navegadores li, .Principal, .Central, .Ubicacion, .Video {
+    .Navegadores li, .Principal, .Central, .Ubicacion, .Video {
         display: block;
-        text-align: center;
         justify-content: center;
     }
-}
-
-@media (max-width: 720px) {
+ 
+    .Logo {
+        display: flex;
+        width: 300%;
+        padding-left: 48%;
+    }
+ 
     .Navegadores li:hover ul {
         display: none;
     }
-}
-
-@media (max-width: 720px) {
+ 
     iframe {
         width: 90%;
     }
-}
-
-@media (max-width: 720px) {
+ 
     .Peques1, .Peques2, .Peques3, .Casita1, .Casita2, .Casita3 {
         display: grid;
         grid-template-columns: 100%;
