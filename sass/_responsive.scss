@@ -1,0 +1,23 @@
+@media (max-width: 720px) {
+    .navBar, .navBar2, .Principal, .Central, .Central2, .Ubicacion, .Video {
+        display: block;
+        text-align: center;
+    }
+
+    .Central, .Categorias, .Titulo3 {
+        margin-top: 32%;
+    }
+    
+    .Titulo2 {
+        margin-top: 5%;
+    }
+
+    iframe {
+        width: 90%;
+    }
+ 
+    .Peques1, .Peques2, .Peques3, .Casita1, .Casita2, .Casita3 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

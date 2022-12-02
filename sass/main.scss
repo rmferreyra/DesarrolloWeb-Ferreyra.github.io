@@ -1,0 +1,321 @@
+$title-font: lato, sans-serif;
+$text-font: 25px;
+$colortop: rgb(192, 192, 192);
+$colorbottom: rgb(205, 151, 169);
+$colornavBar1: rgb(74, 74, 74);
+$colornavBar2: rgb(255, 255, 255);
+$borderradius: 20px;
+
+@import "_reset.scss";
+
+body {
+    font-family: $title-font;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, $colortop, $colorbottom);
+}
+
+#carouselSlidesOnly {
+    margin: 1%;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Logo {
+    img {
+        width: 12%;
+    }            
+}
+
+@mixin barra {
+    margin: 1%;
+    padding: 1%;
+    width: 98%;
+    height: auto;
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(74, 74, 74));
+    border-radius: $borderradius;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    top: 7px;
+    z-index: 1;
+}
+
+.navBar {
+    @include barra;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.navBar2 {
+    @include barra;
+    position: fixed;
+}
+
+.Navegadores {
+    li {
+        list-style: none;
+        display: inline-flex;   
+        a {
+            margin-top: 10%;
+            padding: .5rem;
+            color: white;
+            font-size: larger;
+            text-decoration: none;
+            background-color: $colorbottom;
+            size: 200px;
+            border-radius: 20px;
+            transition: .4s ease-in-out all;
+        }
+        & a:hover {
+            background-color: white;
+            color: $colorbottom;
+            transform: translateY(8px);
+    }
+    
+    }
+        }
+
+
+.Titulo {
+    margin: 7%;
+    padding: 7%;
+    font-size:larger;
+    text-align: center;
+    font-weight: 100;
+}
+
+.Titulo2 {
+    @extend .Titulo3;
+}
+
+.Titulo3 {
+    margin: 7.5% 1% 1% 1%;
+    padding: 5%;
+    font-size: $text-font;
+    text-align: justify;
+}
+
+.Subtitulo {
+    margin: 5%;
+    font-size:large;
+    text-align: center;
+}
+
+.Principal {
+    margin: 1%;
+    padding: 1%;
+    @if $borderradius == 20px {
+        border: solid $colortop;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: larger;
+        img {
+            width: 50%;
+    }
+}
+
+@mixin medio {
+    padding: 1%;
+    border-radius: $borderradius;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    justify-items: center;
+}
+
+.Central {
+    @include medio;
+    margin: 10% 1% 1% 1%;
+    align-items: center;
+    font-size: $text-font;
+    text-align: justify;
+    border: solid $colorbottom;
+        img {
+            width: 75%;
+    }
+}
+
+.Central2 {
+    @include medio;
+    margin: 5% 1% 1% 1%;
+    font-size: x-large;
+    align-items: center;
+    border: solid $colortop;
+        img {
+            width: 80%;
+    }
+}
+
+.Video {
+    display: grid;
+    place-content: center;        
+}
+
+.Ubicacion {
+    margin: 5%;
+    padding: 3%;
+    display: grid;
+    grid-template-rows: auto auto;
+    @if $borderradius == 20px {
+        border: solid $colortop;
+    }
+    justify-items: center;             
+}
+
+.Suscribite {
+    margin: 3%;
+    padding: 5%;
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+}
+
+.Contacto {
+    margin: 2.5%;
+    padding: 3%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Cafecito {
+    margin: 2%;
+    display: grid;
+    place-content: center;
+}
+
+@mixin chicos {
+    margin: 1%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.Peques1, .Peques2, .Peques3 {
+    @include chicos;
+}
+
+.Peques1 {
+    img {
+        transition: transform .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+    }
+} 
+
+.Peques2 {
+    img {
+        transition: transform .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+    }
+} 
+
+.Peques3 {
+    img {
+        transition: transform .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+    }
+} 
+
+.Categorias {
+    margin: 12% 1% 5% 1%;
+    padding: 1%;
+    @if $borderradius == 20px {
+        border: solid $colorbottom;
+    }
+    font-size: large;
+    display: block;
+    text-align: center;
+        li {
+            list-style-position: inside;
+    }
+}
+
+.Tabla {
+    margin: 5%;
+    padding: 1%;
+    @if $borderradius == 20px {
+        border: solid $colortop;
+    }
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin hogar {
+    margin: 1%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.Casita1, .Casita2, .Casita3 {
+    @include hogar;
+}
+
+.Casita1 {
+    img {
+        transition: transform .3s;
+            &:hover {
+                    transform: scale(1.2);
+                }
+    }
+}
+
+.Casita2 {
+    img {
+        transition: transform .3s;
+            &:hover {
+                    transform: scale(1.2);
+                }
+    }
+}
+
+.Casita3 {
+    img {
+        transition: transform .3s;
+            &:hover {
+                    transform: scale(1.2);
+                }
+    }
+}
+
+.Whatsapp {
+    margin: 3%;
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+.Pie {
+    margin: 5% 1% 1% 1%;
+    padding: 1%;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to top, $colortop, $colorbottom);
+    text-align: center  ;
+    border-radius: $borderradius;
+        img {
+            width: 4%;
+            transition: width .5s;
+        &:hover {
+            width: 7%;
+                }
+        }
+}
+
+@import "_responsive.scss"
