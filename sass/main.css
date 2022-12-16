@@ -72,30 +72,33 @@ body {
 }
 
 .Titulo {
-  margin: 7%;
-  padding: 7%;
+  margin: 12%;
+  padding: 8%;
   font-size: larger;
   text-align: center;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .Titulo3, .Titulo2 {
-  margin: 7.5% 1% 1% 1%;
-  padding: 5%;
+  margin: 5% 2% 1% 2%;
+  padding: 8%;
   font-size: 25px;
-  text-align: justify;
+  text-align: center;
 }
 
 .Subtitulo {
-  margin: 5%;
+  margin: 3%;
+  padding: 1%;
   font-size: large;
   text-align: center;
 }
 
 .Principal {
-  margin: 1%;
+  margin: 1% 10% 1% 10%;
   padding: 1%;
   border: solid rgb(192, 192, 192);
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgb(74, 74, 74), rgb(255, 255, 255));
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -103,7 +106,7 @@ body {
   justify-items: center;
   align-items: center;
   align-content: center;
-  font-size: larger;
+  font-size: 2em;
 }
 .Principal img {
   width: 50%;
@@ -118,7 +121,7 @@ body {
   justify-items: center;
   margin: 10% 1% 1% 1%;
   align-items: center;
-  font-size: 25px;
+  font-size: 2em;
   text-align: justify;
   border: solid rgb(205, 151, 169);
 }
@@ -134,7 +137,7 @@ body {
   place-content: center;
   justify-items: center;
   margin: 5% 1% 1% 1%;
-  font-size: x-large;
+  font-size: 1.8em;
   align-items: center;
   border: solid rgb(192, 192, 192);
 }
@@ -150,31 +153,30 @@ body {
 .Ubicacion {
   margin: 5%;
   padding: 3%;
+  font-size: 3em;
   display: grid;
   grid-template-rows: auto auto;
   border: solid rgb(192, 192, 192);
+  border-radius: 20px;
   justify-items: center;
 }
 
-.Suscribite {
-  margin: 3%;
+.Suscribite, .Contacto {
+  margin: 5%;
   padding: 5%;
-  display: grid;
-  justify-content: end;
-  justify-items: end;
-}
-
-.Contacto {
-  margin: 2.5%;
-  padding: 3%;
-  display: grid;
-  justify-content: center;
-  justify-items: center;
+  background-image: linear-gradient(to top, rgb(74, 74, 74), rgb(255, 255, 255));
+  border: solid rgb(192, 192, 192);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 .Cafecito {
-  margin: 2%;
-  display: grid;
+  margin: 1% 2%;
+  padding: 1% 2%;
+  display: flex;
   place-content: center;
 }
 
@@ -190,28 +192,29 @@ body {
   transition: transform 0.3s;
 }
 .Peques1 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Peques2 img {
   transition: transform 0.3s;
 }
 .Peques2 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Peques3 img {
   transition: transform 0.3s;
 }
 .Peques3 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Categorias {
   margin: 12% 1% 5% 1%;
   padding: 1%;
   border: solid rgb(205, 151, 169);
-  font-size: large;
+  border-radius: 20px;
+  font-size: 1.5em;
   display: block;
   text-align: center;
 }
@@ -223,6 +226,9 @@ body {
   margin: 5%;
   padding: 1%;
   border: solid rgb(192, 192, 192);
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgb(74, 74, 74), rgb(255, 255, 255));
+  font-size: 1.2em;
   display: flex;
   text-align: center;
   align-items: center;
@@ -241,21 +247,21 @@ body {
   transition: transform 0.3s;
 }
 .Casita1 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Casita2 img {
   transition: transform 0.3s;
 }
 .Casita2 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Casita3 img {
   transition: transform 0.3s;
 }
 .Casita3 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .Whatsapp {
@@ -269,7 +275,7 @@ body {
   margin: 5% 1% 1% 1%;
   padding: 1%;
   display: block;
-  width: 100%;
+  width: auto;
   background-image: linear-gradient(to top, rgb(192, 192, 192), rgb(205, 151, 169));
   text-align: center;
   border-radius: 20px;

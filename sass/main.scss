@@ -31,7 +31,7 @@ body {
     padding: 1%;
     width: 98%;
     height: auto;
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(74, 74, 74));
+    background-image: linear-gradient(to top, $colornavBar2, $colornavBar1);
     border-radius: $borderradius;
     display: flex;
     align-items: center;
@@ -77,11 +77,11 @@ body {
 
 
 .Titulo {
-    margin: 7%;
-    padding: 7%;
-    font-size:larger;
+    margin: 12%;
+    padding: 8%;
+    font-size: larger;
     text-align: center;
-    font-weight: 100;
+    font-weight: bold;
 }
 
 .Titulo2 {
@@ -89,24 +89,27 @@ body {
 }
 
 .Titulo3 {
-    margin: 7.5% 1% 1% 1%;
-    padding: 5%;
+    margin: 5% 2% 1% 2%;
+    padding: 8%;
     font-size: $text-font;
-    text-align: justify;
+    text-align: center;
 }
 
 .Subtitulo {
-    margin: 5%;
+    margin: 3%;
+    padding: 1%;
     font-size:large;
     text-align: center;
 }
 
 .Principal {
-    margin: 1%;
+    margin: 1% 10% 1% 10%;
     padding: 1%;
     @if $borderradius == 20px {
         border: solid $colortop;
     }
+    border-radius: 20px;
+    background-image: linear-gradient(to top, $colornavBar1, $colornavBar2);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -114,7 +117,7 @@ body {
     justify-items: center;
     align-items: center;
     align-content: center;
-    font-size: larger;
+    font-size: 2em;
         img {
             width: 50%;
     }
@@ -133,7 +136,7 @@ body {
     @include medio;
     margin: 10% 1% 1% 1%;
     align-items: center;
-    font-size: $text-font;
+    font-size: 2em;
     text-align: justify;
     border: solid $colorbottom;
         img {
@@ -144,7 +147,7 @@ body {
 .Central2 {
     @include medio;
     margin: 5% 1% 1% 1%;
-    font-size: x-large;
+    font-size: 1.8em;
     align-items: center;
     border: solid $colortop;
         img {
@@ -160,33 +163,36 @@ body {
 .Ubicacion {
     margin: 5%;
     padding: 3%;
+    font-size: 3em;
     display: grid;
     grid-template-rows: auto auto;
     @if $borderradius == 20px {
         border: solid $colortop;
     }
+    border-radius: 20px;
     justify-items: center;             
 }
 
-.Suscribite {
-    margin: 3%;
+@mixin Campos {
+    margin: 5%;
     padding: 5%;
-    display: grid;
-    justify-content: end;
-    justify-items: end;
+    background-image: linear-gradient(to top, $colornavBar1, $colornavBar2);
+    border: solid $colortop;
+    border-radius: $borderradius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
 }
 
-.Contacto {
-    margin: 2.5%;
-    padding: 3%;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
+.Suscribite, .Contacto {
+    @include Campos;
 }
 
 .Cafecito {
-    margin: 2%;
-    display: grid;
+    margin: 1% 2%;
+    padding: 1% 2%;
+    display: flex;
     place-content: center;
 }
 
@@ -206,7 +212,7 @@ body {
     img {
         transition: transform .3s;
             &:hover{
-                transform: scale(1.2);
+                transform: scale(1.3);
             }
     }
 } 
@@ -215,7 +221,7 @@ body {
     img {
         transition: transform .3s;
             &:hover{
-                transform: scale(1.2);
+                transform: scale(1.3);
             }
     }
 } 
@@ -224,7 +230,7 @@ body {
     img {
         transition: transform .3s;
             &:hover{
-                transform: scale(1.2);
+                transform: scale(1.3);
             }
     }
 } 
@@ -235,7 +241,8 @@ body {
     @if $borderradius == 20px {
         border: solid $colorbottom;
     }
-    font-size: large;
+    border-radius: 20px;
+    font-size: 1.5em;
     display: block;
     text-align: center;
         li {
@@ -249,6 +256,9 @@ body {
     @if $borderradius == 20px {
         border: solid $colortop;
     }
+    border-radius: 20px;
+    background-image: linear-gradient(to top, $colornavBar1, $colornavBar2);
+    font-size: 1.2em;
     display: flex;
     text-align: center;
     align-items: center;
@@ -271,7 +281,7 @@ body {
     img {
         transition: transform .3s;
             &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.3);
                 }
     }
 }
@@ -280,7 +290,7 @@ body {
     img {
         transition: transform .3s;
             &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.3);
                 }
     }
 }
@@ -289,7 +299,7 @@ body {
     img {
         transition: transform .3s;
             &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.3);
                 }
     }
 }
@@ -305,7 +315,7 @@ body {
     margin: 5% 1% 1% 1%;
     padding: 1%;
     display: block;
-    width: 100%;
+    width: auto;
     background-image: linear-gradient(to top, $colortop, $colorbottom);
     text-align: center  ;
     border-radius: $borderradius;
